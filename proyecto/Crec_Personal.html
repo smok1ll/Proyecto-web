@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/miCss.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Crecimiento Personal</title>
+  <link rel="icon" href="imagenes/Logo.png">
+</head>
+
+<body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="imagenes/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Librarium
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Ofertas">Ofertas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="juvenil.html">Infantil y Juvenil</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Lit_Chilena.html">Lit. Chilena</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Crec_Personal.html">Crec. Personal</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="novelas.html">Novelas</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="poesia.html">Poesia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Clasicos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Cuentos</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Mangas</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Historia y Geografia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Deporte</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Novedades</a>
+          </li>
+        </ul>
+        <div class="iconos">
+          <li class="cuenta">
+            <a href="cuenta.html"><i class="bi bi-person" style="color:rgb(67, 68, 68);"></i></a>
+          </li>
+          <li class="carro">
+            <a href="#" id="carrito">
+              <i class="bi bi-cart2" style="color:rgb(67, 68, 68);">
+                  <div class="buy-card">
+                    <ul class="nav-card">
+                        <li id="carro__li">Imagen</li>
+                        <li id="carro__li">Nombre</li>
+                        <li id="carro__li">Precio</li>
+                        <li id="carro__li">Cantidad</li>
+                    </ul>
+                    <div class="lista-de-compras">
+                      
+                    </div>
+                    <button id="vaciar_carro">VACIAR CARRITO</button>
+                  </div>
+              </i>
+            </a>
+          </li>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Titulo, Autor, Isbn..."
+            aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--fin navbar-->
+  <!--cards-->
+  <div class="containers">
+    <center>
+      <h1 class="texto">Ofertas</h1>
+    </center>
+    <div class="card__container" id="lista-compra">
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="1">add to cart</button>
+        </div>
+      </article>
+
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="2">add to cart</button>
+        </div>
+      </article>
+
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="3">add to cart</button>
+        </div>
+      </article>
+      
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="4">add to cart</button>
+        </div>
+      </article>
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="5">add to cart</button>
+        </div>
+      </article>
+      <article class="card__article">
+        <img src="imagenes/71DPYK-e2ML.jpg" alt="" class="card__img">
+
+        <div class="card__data">
+          <span class="card__description">Fyodor Dostoevsky</span>
+          <h2 class="card__title">Los hermanos Karamazov</h2>
+          <p class="precio">$11.000</p>
+          <a href="#" class="card__button">Mas info</a>
+          <button class="card__button2" data-id="6">add to cart</button>
+        </div>
+      </article>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!--fin cards-->
+  <br>
+  <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="#">Nuestros servicios</a></li>
+            <li><a href="#">Politica de privacidad</a></li>
+            <li><a href="formulario.html">Afiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Envios</a></li>
+            <li><a href="#">Pago</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Encuentranos</h4>
+          <ul>
+            <li><a href="#">Av.Valparaiso 429</a></li>
+            <li><a href="#">librarium@gmail.com</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Siguenos</h4>
+          <div class="social-link">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+#map {
+	height: 600px;
+	width: 85%;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+
+.ubicasao{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+

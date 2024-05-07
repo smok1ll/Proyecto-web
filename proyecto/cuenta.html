@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="JS/script.js">
+    <link rel="stylesheet" href="JS/formulario.js">
+    <title>Cuenta</title>
+    <link rel="icon" href="imagenes/Logo.png">
+</head>
+<body>  
+  <!--registrar-->
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+                <br>
+                <br>
+                <a class="btn btn-primary" href="index.html" role="button">Modo Invitado</a>
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="email" placeholder="Correo electronico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </label>
+                    <input type="submit" id="submit" value="Registrarse"></input>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--login-->
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Bienvenido nuevamente</h2>
+                <p>Si aun no tienes una cuenta por favor registrarte aqui</p>
+                <input type="button" value="Registrarse" id="sign-up">
+                <br>
+                <br>
+                <a class="btn btn-primary" href="index.html" role="button">Modo Invitado</a>
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <p>o Inicia Sesión con una cuenta</p>
+                <form class="form">
+                    <label>
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="LogEmail" placeholder="Correo electronico" required>
+                    </label>
+                    <label>
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="LogPassword" placeholder="Contraseña" required>
+                    </label>
+                    <input type="submit" id="LogSubmit" value="Iniciar Sesión"></input>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+    <script src="JS/formulario.js"></script>
+</body>
+</html>
